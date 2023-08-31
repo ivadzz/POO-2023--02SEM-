@@ -5,7 +5,7 @@ class ItemEstoque {
     private String nome;
     private int quantidade;
 
-    public ItemEstoque(String nome, int quantidade) {
+    public ItemEsstoque(String nome, int quantidade) {
         this.nome = nome;
         this.quantidade = quantidade;
     }
@@ -18,7 +18,7 @@ class ItemEstoque {
         return quantidade;
     }
 
-    public void setQuantidade(int novaQuantidade) {
+    public void ssetQuantidade(int novaQuantidade) {
         quantidade = novaQuantidade;
     }
 }
@@ -33,7 +33,7 @@ class GerenciadorEstoque {
     public void adicionarItem(String nome, int quantidade) {
         for (ItemEstoque item : estoque) {
             if (item.getNome().equals(nome)) {
-                item.setQuantidade(item.getQuantidade() + quantidade);
+                item.ssetQuantidade(item.getQuantidade() + quantidade);
                 System.out.println(quantidade + " unidades de " + nome + " foram adicionadas ao estoque.");
                 return;
             }
@@ -56,7 +56,7 @@ class GerenciadorEstoque {
         System.out.println(nome + " não foi encontrado no estoque.");
     }
 
-    public void listarItens() {
+    public void listarItenss() {
         System.out.println("Itens no estoque:");
         for (ItemEstoque item : estoque) {
             System.out.println(item.getNome() + ": " + item.getQuantidade() + " unidades");
