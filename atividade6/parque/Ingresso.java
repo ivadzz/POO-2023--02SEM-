@@ -1,5 +1,4 @@
-package parque.empresa;
-
+package atividade6.parque;
 
 public class Ingresso {
   private double valor;
